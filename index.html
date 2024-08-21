@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Developers Calendar</title>
+</head>
+<body>
+  <div class="calendar">
+    <h2>Developer's Calendar - 2025</h2>
+    <div class="controls">
+      <select id="monthSelect">
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+      </select>
+      <button id="resetCalendar">Reset Calendar</button>
+    </div>
+    <div class="calendar-grid">
+      <!-- Calendar days will be generated here -->
+    </div>
+  </div>
+
+  <!-- Modal for adding notes -->
+  <div id="noteModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Add Note</h3>
+      <p id="selectedDate"></p>
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" required>
+      <label for="note">Note:</label>
+      <textarea id="note" rows="2" placeholder="Enter your note..."></textarea>
+      <button id="saveNote">Save Note</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
